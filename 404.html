@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#16233d">
+    <title>الصفحة غير موجودة | الشهد ترافيل للعمرة</title>
+    <meta name="description" content="عذرًا، الصفحة المطلوبة غير موجودة. يمكنك العودة إلى الصفحة الرئيسية أو التواصل مع الشهد ترافيل للعمرة عبر واتساب.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy: #16233d;
+            --navy-2: #23385f;
+            --gold: #d7a348;
+            --gold-2: #f1cf86;
+            --green: #16a34a;
+            --white: #ffffff;
+            --muted: #dbe6f5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 28px;
+            color: var(--white);
+            font-family: "Tajawal", Arial, sans-serif;
+            line-height: 1.8;
+            background:
+                linear-gradient(120deg, rgba(11, 20, 36, 0.94), rgba(22, 35, 61, 0.88), rgba(15, 118, 110, 0.72)),
+                url("https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=1800&q=82") center/cover;
+        }
+
+        .page {
+            width: min(920px, 100%);
+            text-align: center;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 38px;
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .brand-mark {
+            position: relative;
+            width: 58px;
+            height: 58px;
+            display: grid;
+            place-items: center;
+            border-radius: 16px;
+            background: linear-gradient(145deg, #f6d990, var(--gold));
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.45), 0 14px 28px rgba(0, 0, 0, 0.22);
+        }
+
+        .brand-mark::before {
+            content: "";
+            position: absolute;
+            width: 29px;
+            height: 36px;
+            border-radius: 14px 14px 8px 8px;
+            background: var(--navy);
+            clip-path: polygon(50% 0, 100% 32%, 100% 100%, 0 100%, 0 32%);
+        }
+
+        .brand-mark::after {
+            content: "الشهد";
+            position: absolute;
+            bottom: 10px;
+            color: var(--gold-2);
+            font-family: "El Messiri", "Tajawal", sans-serif;
+            font-size: 0.58rem;
+            font-weight: 700;
+        }
+
+        .brand-name {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            line-height: 1.15;
+        }
+
+        .brand-name strong {
+            font-family: "El Messiri", "Tajawal", sans-serif;
+            font-size: 1.35rem;
+        }
+
+        .brand-name span {
+            color: var(--muted);
+            font-size: 0.82rem;
+            font-weight: 700;
+        }
+
+        .code {
+            margin-bottom: 10px;
+            color: var(--gold-2);
+            font-family: "El Messiri", "Tajawal", sans-serif;
+            font-size: clamp(5.6rem, 19vw, 11rem);
+            font-weight: 700;
+            line-height: 0.9;
+            text-shadow: 0 18px 44px rgba(0, 0, 0, 0.34);
+        }
+
+        h1 {
+            margin-bottom: 14px;
+            font-family: "El Messiri", "Tajawal", sans-serif;
+            font-size: clamp(2rem, 5vw, 3.4rem);
+            line-height: 1.3;
+        }
+
+        p {
+            max-width: 660px;
+            margin: 0 auto 28px;
+            color: var(--muted);
+            font-size: clamp(1rem, 2.3vw, 1.2rem);
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            min-height: 50px;
+            padding: 12px 22px;
+            border-radius: 8px;
+            color: var(--white);
+            font-weight: 800;
+            text-decoration: none;
+            box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+        }
+
+        .btn.gold {
+            background: linear-gradient(135deg, var(--gold), #b9812c);
+        }
+
+        .btn.green {
+            background: var(--green);
+        }
+
+        .btn.ghost {
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.24);
+            box-shadow: none;
+        }
+
+        .hint {
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 560px) {
+            body {
+                padding: 22px;
+            }
+
+            .brand {
+                margin-bottom: 28px;
+            }
+
+            .actions {
+                display: grid;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <a class="brand" href="index.html" aria-label="الشهد ترافيل للعمرة">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-name">
+                <strong>الشهد ترافيل</strong>
+                <span>للعمرة من المدينة</span>
+            </span>
+        </a>
+
+        <div class="code" aria-hidden="true">404</div>
+        <h1>الصفحة غير موجودة</h1>
+        <p>يبدو أن الرابط الذي وصلت منه غير صحيح أو أن الصفحة تم نقلها. يمكنك العودة للرئيسية أو التواصل معنا مباشرة لحجز رحلة العمرة.</p>
+
+        <div class="actions">
+            <a class="btn gold" href="index.html"><i class="fas fa-house"></i> العودة للرئيسية</a>
+            <a class="btn green" href="https://wa.me/966568344647"><i class="fab fa-whatsapp"></i> تواصل واتساب</a>
+            <a class="btn ghost" href="tel:+966568344647"><i class="fas fa-phone"></i> اتصل الآن</a>
+        </div>
+
+        <div class="hint">الشهد ترافيل للعمرة | رحلات عمرة من المدينة المنورة إلى مكة</div>
+    </main>
+</body>
+</html>
